@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 const permController = require('../middleware/permController');
 const jwt = require('../middleware/jwt');
 
+// Initialize the development environment
 const environment = process.env.NODE_ENV || 'development';
 const config = require('../knexfile.js')[environment];
 const knex = require('knex')(config);
